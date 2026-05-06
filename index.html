@@ -62,7 +62,7 @@
     .btg:hover{color:var(--ink);border-color:var(--ink)}
     .cycle{border-top:1px solid #e8e4dd;padding-top:40px;display:flex;align-items:flex-start;justify-content:center}
     .cstep{text-align:center;flex:1;max-width:200px}
-    .cnum{font-family:var(--serif);font-size:11px;color:var(--red);display:block;margin-bottom:6px}
+    .cnum{font-family:var(--serif);font-size:22px;color:var(--red);display:block;margin-bottom:6px}
     .clbl{font-family:var(--serif);font-size:16px;color:var(--ink);display:block;margin-bottom:5px}
     .csub{font-size:11px;color:var(--ink-60);line-height:1.55;display:block}
     .carr{font-size:18px;color:var(--ink-30);flex-shrink:0;padding:0 10px;margin-top:20px}
@@ -215,6 +215,13 @@
     .sb{width:44px;height:44px;border-radius:50%;border:1px solid rgba(249,247,243,.25);display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(249,247,243,.6);font-size:16px;font-weight:500;transition:border-color .2s,color .2s}
     .sb:hover{border-color:var(--red);color:var(--red)}
 
+    
+    .lang-switch{display:flex;gap:2px;align-items:center;margin-right:8px}
+    .lang-switch a{font-size:11px;font-weight:500;color:var(--ink-60);text-decoration:none;padding:3px 6px;border-radius:3px;transition:color .2s,background .2s}
+    .lang-switch a:hover{color:var(--ink)}
+    .lang-switch a.active{color:var(--red);font-weight:600}
+    .lang-sep{font-size:10px;color:var(--ink-30);margin:0 1px}
+
     /* RESPONSIVE */
     @media(max-width:900px){.pg{grid-template-columns:1fr}.g6{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:1fr}.abc{grid-template-columns:1fr}.nlinks{display:none}}
     @media(max-width:600px){.cycle{flex-direction:column;align-items:center;gap:16px}.carr{transform:rotate(90deg);padding:0;margin:0}.cstep{max-width:100%}.g6{grid-template-columns:1fr}.fi2{grid-template-columns:1fr;justify-items:center;text-align:center;gap:20px}.fr2{justify-content:center}}
@@ -224,7 +231,7 @@
 
 <nav id="nav">
   <div class="ni">
-    <a href="/" class="logo"><img src="/images/logo-red.png" alt="Axem Solution" style="height:32px;width:auto;vertical-align:middle;margin-right:8px;">Axem Solution<span>.</span></a>
+    <a href="/" class="logo"><img src="/images/logo-red.png" alt="Axem Solution" style="height:28px;width:auto;vertical-align:middle;margin-right:10px;">Axem Solution<span>.</span></a>
     <ul class="nlinks">
       <li><a href="#phases">How We Work</a></li>
       <li><a href="#who">Who Is This For</a></li>
@@ -232,7 +239,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="#contact" class="ncta">Book a Call</a>
+    <div class="lang-switch"><a href="/index.html" class="active">EN</a><span class="lang-sep">|</span><a href="/index-es.html">ES</a><span class="lang-sep">|</span><a href="/index-fr.html">FR</a></div>
+    <a href="https://cal.com/marcela-gallego-zgbxvq/intro-call-30-min" class="ncta" target="_blank" rel="noopener">Book a Call</a>
   </div>
 </nav>
 
