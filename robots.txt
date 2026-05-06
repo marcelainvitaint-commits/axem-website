@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.axemsolution.com/sitemap.xml
+
+# Block non-content assets from crawlers if needed
+Disallow: /api/

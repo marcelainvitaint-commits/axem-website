@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axem Solution — B2B Revenue Growth System</title>
+  <meta name="description" content="We help B2B founders build a consistent pipeline of dream clients with a complete system that improves every step of your sales cycle." />
+  <meta name="keywords" content="B2B client acquisition, sales system, qualified meetings, AI outreach, B2B growth partner, revenue system, pipeline" />
+  <meta name="author" content="Marcela Gallego, Axem Solution" />
+  <link rel="canonical" href="https://www.axemsolution.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.axemsolution.com/" />
+  <meta property="og:title" content="Axem Solution — B2B Revenue Growth System" />
+  <meta property="og:description" content="We help B2B founders build a consistent pipeline of dream clients with a complete system that improves every step of your sales cycle." />
+  <meta property="og:site_name" content="Axem Solution" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Axem Solution","description":"B2B growth partner that builds complete revenue systems.","url":"https://www.axemsolution.com","founder":{"@type":"Person","name":"Marcela Gallego"},"serviceType":"B2B Client Acquisition and Revenue Systems","areaServed":["Europe","North America"],"contactPoint":{"@type":"ContactPoint","email":"info@axemsolution.com","contactType":"sales"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--ink:#0f0e0d;--ink-60:#6b6760;--ink-30:#c4c2bc;--cream:#f9f7f3;--grey:#f2efe9;--white:#fff;--red:#c00021;--red-light:#fff9f5;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--radius:4px;--radius-lg:12px;--max:1080px;--px:clamp(1.25rem,5vw,3rem);--py:clamp(4rem,8vw,6rem)}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+    .si{max-width:var(--max);margin:0 auto;padding:var(--py) var(--px)}
+    .lbl{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:10px;display:block}
+    .h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.15;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px}
+    .h2 em{font-style:italic}
+    .sub{font-size:14px;color:var(--ink-60);line-height:1.7;max-width:52ch;margin-bottom:36px}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;background:rgba(249,247,243,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--ink-30);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 2px 16px rgba(0,0,0,.07)}
+    .ni{max-width:var(--max);margin:0 auto;padding:0 var(--px);display:flex;align-items:center;justify-content:space-between;height:64px;gap:2rem}
+    .logo{font-family:var(--serif);font-size:17px;color:var(--ink);text-decoration:none}
+    .logo span{color:var(--red)}
+    .nlinks{display:flex;gap:28px;list-style:none}
+    .nlinks a{font-size:13px;color:var(--ink-60);text-decoration:none;transition:color .2s}
+    .nlinks a:hover{color:var(--ink)}
+    .ncta{font-size:13px;font-weight:500;background:var(--white);color:var(--red);border:1.5px solid var(--red);padding:9px 20px;border-radius:var(--radius);text-decoration:none;transition:background .2s;white-space:nowrap}
+    .ncta:hover{background:var(--red-light)}
+
+    /* HERO */
+    .hw{background:var(--cream);position:relative;overflow:hidden}
+    .hbg{position:absolute;top:0;right:0;bottom:0;width:55%;background-image:url('/images/hero-bg.png');background-size:cover;background-position:left center;opacity:.07;pointer-events:none}
+    .hbg::before{content:'';position:absolute;top:0;left:0;bottom:0;width:50%;background:linear-gradient(to right,var(--cream),transparent)}
+    .hin{max-width:var(--max);margin:0 auto;padding:clamp(5rem,10vw,8rem) var(--px) clamp(4rem,8vw,6rem);text-align:center;position:relative;z-index:2}
+    .badge{display:inline-flex;align-items:center;gap:6px;background:var(--red-light);color:var(--red);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:28px}
+    .bdot{width:7px;height:7px;background:var(--red);border-radius:50%}
+    .h1{font-family:var(--serif);font-size:clamp(2.4rem,5.5vw,3.8rem);line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:22px}
+    .h1 em{font-style:italic;color:var(--red)}
+    .hsub1{font-size:clamp(15px,2vw,17px);color:var(--ink);line-height:1.7;max-width:52ch;margin:0 auto 10px;font-weight:500}
+    .hsub2{font-size:clamp(13px,1.8vw,15px);color:var(--ink-60);line-height:1.7;max-width:52ch;margin:0 auto 40px}
+    .hact{display:flex;gap:14px;justify-content:center;align-items:center;margin-bottom:64px;flex-wrap:wrap}
+    .btp{background:var(--red);color:#fff;font-family:var(--sans);font-size:14px;font-weight:500;padding:14px 30px;border-radius:var(--radius);text-decoration:none;transition:background .2s,transform .15s}
+    .btp:hover{background:#a0001b;transform:translateY(-1px)}
+    .btg{font-size:13px;color:var(--ink-60);text-decoration:none;border-bottom:1px solid var(--ink-30);padding-bottom:1px;transition:color .2s,border-color .2s}
+    .btg:hover{color:var(--ink);border-color:var(--ink)}
+    .cycle{border-top:1px solid #e8e4dd;padding-top:40px;display:flex;align-items:flex-start;justify-content:center}
+    .cstep{text-align:center;flex:1;max-width:200px}
+    .cnum{font-family:var(--serif);font-size:11px;color:var(--red);display:block;margin-bottom:6px}
+    .clbl{font-family:var(--serif);font-size:16px;color:var(--ink);display:block;margin-bottom:5px}
+    .csub{font-size:11px;color:var(--ink-60);line-height:1.55;display:block}
+    .carr{font-size:18px;color:var(--ink-30);flex-shrink:0;padding:0 10px;margin-top:20px}
+
+    /* PHASES */
+    .pw{background:var(--white)}
+    .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .pc{background:var(--white);border:1px solid var(--ink-30);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:box-shadow .2s}
+    .pc:hover{box-shadow:0 4px 24px rgba(0,0,0,.08)}
+    .pbar{height:3px;background:var(--ink-30);flex-shrink:0}
+    .pbar.red{background:var(--red)}
+    .pbd{padding:26px 22px 8px}
+    .pnum{font-family:var(--serif);font-size:22px;color:#e0d9d0;margin-bottom:8px}
+    .ptag{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);background:var(--red-light);padding:3px 9px;border-radius:20px;display:inline-block;margin-bottom:14px}
+    .ph{font-family:var(--serif);font-size:16px;color:var(--ink);margin-bottom:12px;line-height:1.3}
+    .ptl{font-size:12px;color:var(--ink-60);line-height:1.65;margin-bottom:20px}
+    .pi{list-style:none;display:flex;flex-direction:column;gap:10px;padding:0 22px 22px}
+    .pi li{font-size:12px;color:var(--ink);padding-left:18px;position:relative;line-height:1.45}
+    .pi li::before{content:'→';position:absolute;left:0;color:var(--red);font-size:11px;top:1px}
+    .pdel{margin-top:auto;padding:18px 22px;border-top:1px solid var(--grey);font-size:11px;color:var(--ink-60);line-height:1.6}
+    .pdel strong{color:var(--ink);font-weight:600}
+    .itog{display:flex;align-items:center;gap:6px;margin-top:12px;background:none;border:none;cursor:pointer;font-family:var(--sans);font-size:11px;font-weight:500;color:var(--red);padding:0;-webkit-tap-highlight-color:transparent}
+    .iarr{font-size:12px;transition:transform .2s;display:inline-block}
+    .pimg{display:none;margin-top:12px;border-radius:8px;overflow:hidden;border:1px solid var(--grey)}
+    .pimg.vis{display:block}
+
+    /* Phase 1 mock */
+    .m1h{background:#f9f7f3;padding:7px 12px;border-bottom:1px solid #f2efe9;display:flex;align-items:center;justify-content:space-between}
+    .m1ht{font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6b6760}
+    .m1b{padding:10px 12px;background:#fff;display:flex;flex-direction:column;gap:0}
+    .m1s{font-size:8px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c00021;margin-bottom:5px;margin-top:8px}
+    .m1s:first-child{margin-top:0}
+    .m1r{display:flex;align-items:flex-start;gap:5px;margin-bottom:3px}
+    .m1i{font-size:9px;flex-shrink:0;opacity:.6}
+    .m1t{font-size:9px;color:#0f0e0d;line-height:1.4}
+    .m1t span{color:#6b6760;font-size:8.5px;display:block}
+    .m1d{height:1px;background:#f2efe9;margin:6px 0}
+    .m1tg{display:flex;flex-wrap:wrap;gap:3px}
+    .m1qt{font-size:8px;background:#fff9f5;border:1px solid #f5d0d5;border-radius:3px;padding:2px 6px;color:#0f0e0d;font-style:italic}
+    .m1st{font-size:8px;background:#f9f7f3;border:1px solid #e8e4dd;border-radius:3px;padding:2px 6px;color:#6b6760}
+
+    /* Phase 2 mock */
+    .m2h{background:#f9f7f3;padding:7px 12px;border-bottom:1px solid #f2efe9;display:flex;align-items:center;justify-content:space-between}
+    .m2ht{font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6b6760}
+    .m2hb{font-size:8px;background:#fff9f5;color:#c00021;border:1px solid #f5d0d5;border-radius:3px;padding:2px 7px;font-weight:600}
+    .m2tp{padding:10px 12px;border-bottom:1px solid #f2efe9;background:#fff}
+    .m2n{font-size:11px;font-weight:600;color:#0f0e0d;margin-bottom:2px}
+    .m2m{font-size:8.5px;color:#6b6760}
+    .m2g{display:grid;grid-template-columns:1fr 1fr;background:#fff}
+    .m2c{padding:7px 12px;border-bottom:1px solid #f5f2ed;border-right:1px solid #f5f2ed}
+    .m2c:nth-child(even){border-right:none}
+    .m2c:nth-last-child(-n+2){border-bottom:none}
+    .m2cl{font-size:7.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#6b6760;margin-bottom:2px}
+    .m2cv{font-size:9px;color:#0f0e0d;line-height:1.4}
+    .m2sg{padding:9px 12px;background:#f9f7f3;border-top:1px solid #f2efe9}
+    .m2sl{font-size:8px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c00021;margin-bottom:6px}
+    .m2sr{display:flex;align-items:flex-start;gap:6px;margin-bottom:4px}
+    .m2sr:last-child{margin-bottom:0}
+    .m2sd{width:6px;height:6px;border-radius:50%;background:#c00021;flex-shrink:0;margin-top:3px}
+    .m2st{font-size:9px;color:#0f0e0d;line-height:1.4;flex:1}
+    .m2st span{color:#6b6760;font-size:8.5px}
+    .m2sb{font-size:7.5px;background:#fff9f5;color:#c00021;border:1px solid #f5d0d5;border-radius:3px;padding:1px 5px;margin-left:auto;flex-shrink:0;align-self:center}
+
+    /* Phase 3 mock */
+    .m3w{background:#f9f7f3}
+    .m3t{background:#fff;padding:6px 12px;display:flex;gap:14px;color:#6b6760;font-size:9px;font-weight:500;border-bottom:1px solid #e0d9d0}
+    .m3sl{padding:5px 12px 2px;display:flex;align-items:center;gap:6px}
+    .tl{background:#fff3cd;color:#856404;border-radius:3px;padding:1px 6px;font-size:8px;font-weight:600}
+    .tb{background:#d1ecf1;color:#0c5460;border-radius:3px;padding:1px 6px;font-size:8px;font-weight:600}
+    .m3ch{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;padding:2px 12px;font-size:8px;color:#6b6760;font-weight:500;gap:4px}
+    .m3r{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;padding:4px 12px;border-top:1px solid #f5f2ed;align-items:center;gap:4px}
+    .blr{filter:blur(1.5px);user-select:none;color:#0f0e0d;font-size:9px;font-weight:500}
+    .blr-sm{filter:blur(1.5px);user-select:none;color:#6b6760;font-size:8.5px}
+    .dr{color:#c00021;font-size:9px}
+    .nr{font-size:9px;color:#6b6760}
+
+    /* WHO */
+    .ww{background:var(--grey)}
+    .g6{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .wc{border-left:3px solid var(--red);background:var(--white);border-radius:0 var(--radius-lg) var(--radius-lg) 0;padding:20px;border-top:1px solid var(--grey);border-right:1px solid var(--grey);border-bottom:1px solid var(--grey);box-shadow:0 2px 8px rgba(0,0,0,.03)}
+    .wct{font-family:var(--serif);font-size:14px;color:var(--ink);margin-bottom:8px}
+    .wcp{font-size:12px;color:var(--ink-60);line-height:1.65}
+
+    /* INDUSTRIES */
+    .iw{background:var(--white);padding:var(--py) 0;overflow:hidden}
+    .ilbl{padding:0 var(--px);margin-bottom:28px}
+    .tw{position:relative;overflow:hidden}
+    .tw::before,.tw::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+    .tw::before{left:0;background:linear-gradient(to right,var(--white),transparent)}
+    .tw::after{right:0;background:linear-gradient(to left,var(--white),transparent)}
+    .track{display:flex;gap:0;width:max-content;animation:scroll 36s linear infinite}
+    .track:hover{animation-play-state:paused}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .ii{display:flex;flex-direction:column;align-items:center;gap:10px;padding:8px 30px;border-right:1px solid var(--grey);min-width:120px}
+    .ii svg{width:36px;height:36px;color:var(--ink)}
+    .in{font-size:11px;color:var(--ink-60);text-align:center;white-space:nowrap}
+
+    /* WHY */
+    .yw{background:var(--white)}
+    .dg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .dc{background:var(--white);border:1px solid var(--ink-30);border-radius:var(--radius-lg);padding:26px 24px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+    .dic{width:34px;height:34px;border-radius:var(--radius);background:var(--red-light);display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:14px}
+    .dh{font-family:var(--serif);font-size:15px;color:var(--ink);margin-bottom:8px}
+    .dp{font-size:12.5px;color:var(--ink-60);line-height:1.65}
+
+    /* ABOUT */
+    .aw{background:var(--grey)}
+    .abt{margin-bottom:36px}
+    .abt p{font-size:14px;color:var(--ink-60);line-height:1.8;margin-bottom:18px;max-width:65ch}
+    .abt p:last-child{margin-bottom:0}
+    .abc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .ac{background:var(--white);border:1px solid var(--ink-30);border-radius:var(--radius-lg);padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+    .acl{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+    .act{font-size:12.5px;color:var(--ink-60);line-height:1.65}
+
+    /* FAQ */
+    .fw{background:var(--cream)}
+    .fl{max-width:700px}
+    details{border-bottom:1px solid #e8e4dd}
+    details:first-of-type{border-top:1px solid #e8e4dd}
+    summary{cursor:pointer;padding:22px 0;font-family:var(--serif);font-size:16px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;-webkit-tap-highlight-color:transparent}
+    summary::-webkit-details-marker{display:none}
+    summary:hover{color:var(--red)}
+    .fi{width:24px;height:24px;border-radius:50%;border:1px solid var(--ink-30);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--red);flex-shrink:0;transition:background .2s;line-height:1}
+    details[open] .fi{background:var(--red-light);border-color:var(--red)}
+    details[open] .pl{display:none}
+    details:not([open]) .mi{display:none}
+    .fa{padding:0 36px 22px 0;font-size:13px;color:var(--ink-60);line-height:1.75;max-width:60ch}
+
+    /* CTA */
+    .ctaw{background:var(--white)}
+    .ctai{max-width:var(--max);margin:0 auto;padding:clamp(5rem,10vw,8rem) var(--px);text-align:center}
+    .ctai .h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
+    .ctasub{font-size:16px;color:var(--ink-60);line-height:1.7;max-width:40ch;margin:0 auto 40px}
+    .bto{display:inline-block;background:var(--white);color:var(--red);border:1.5px solid var(--red);font-family:var(--sans);font-size:14px;font-weight:500;padding:14px 32px;border-radius:var(--radius);text-decoration:none;transition:background .2s,transform .15s}
+    .bto:hover{background:var(--red-light);transform:translateY(-1px)}
+
+    /* FOOTER */
+    footer{background:var(--ink);padding:40px var(--px)}
+    .fi2{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+    .fl2{display:flex;flex-direction:column;gap:6px}
+    .fc{font-size:11px;color:rgba(249,247,243,.5)}
+    .fe{font-size:13px;font-weight:500;color:var(--cream);text-decoration:none;transition:color .2s}
+    .fe:hover{color:var(--red)}
+    .fcp{font-size:11px;color:rgba(249,247,243,.35);margin-top:4px}
+    .flogo{display:flex;justify-content:center}
+    .flt{font-family:var(--serif);font-size:15px;color:var(--cream)}
+    .flt span{color:var(--red)}
+    .fr2{display:flex;justify-content:flex-end}
+    .sb{width:44px;height:44px;border-radius:50%;border:1px solid rgba(249,247,243,.25);display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(249,247,243,.6);font-size:16px;font-weight:500;transition:border-color .2s,color .2s}
+    .sb:hover{border-color:var(--red);color:var(--red)}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){.pg{grid-template-columns:1fr}.g6{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:1fr}.abc{grid-template-columns:1fr}.nlinks{display:none}}
+    @media(max-width:600px){.cycle{flex-direction:column;align-items:center;gap:16px}.carr{transform:rotate(90deg);padding:0;margin:0}.cstep{max-width:100%}.g6{grid-template-columns:1fr}.fi2{grid-template-columns:1fr;justify-items:center;text-align:center;gap:20px}.fr2{justify-content:center}}
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo"><img src="/images/logo-red.png" alt="Axem Solution" style="height:32px;width:auto;vertical-align:middle;margin-right:8px;">Axem Solution<span>.</span></a>
+    <ul class="nlinks">
+      <li><a href="#phases">How We Work</a></li>
+      <li><a href="#who">Who Is This For</a></li>
+      <li><a href="#why">Why Axem</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contact" class="ncta">Book a Call</a>
+  </div>
+</nav>
+
+<div class="hw">
+  <div class="hbg"></div>
+  <div class="hin">
+    <div class="badge"><div class="bdot"></div>B2B Growth Partner</div>
+    <h1 class="h1">Build the revenue system<br>your business <em>deserves</em></h1>
+    <p class="hsub1">Identify your dream clients, connect with them, and improve every step of the process to sign more contracts.</p>
+    <p class="hsub2">We fill in every gap in your sales cycle so you have a consistent pipeline of ideal prospects and a system that converts them.</p>
+    <div class="hact">
+      <a href="#contact" class="btp">Book Your Strategy Call</a>
+      <a href="#phases" class="btg">See how it works</a>
+    </div>
+    <div class="cycle">
+      <div class="cstep"><span class="cnum">01</span><span class="clbl">Strategy</span><span class="csub">Know exactly who to target and how your offer can help them</span></div>
+      <div class="carr">→</div>
+      <div class="cstep"><span class="cnum">02</span><span class="clbl">Client Acquisition</span><span class="csub">Reach them at the right moment with the right message</span></div>
+      <div class="carr">→</div>
+      <div class="cstep"><span class="cnum">03</span><span class="clbl">Conversion</span><span class="csub">Turn every good conversation into a signed contract</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="pw" id="phases">
+  <div class="si">
+    <span class="lbl">How We Work</span>
+    <h2 class="h2">Three steps to <em>more and better clients</em></h2>
+    <p class="sub">We build the full system so you know exactly who to talk to, reach them at the right moment, and turn those conversations into signed contracts.</p>
+    <div class="pg">
+
+      <div class="pc">
+        <div class="pbar"></div>
+        <div class="pbd"><div class="pnum">01</div><span class="ptag">Strategy First</span><div class="ph">Find out exactly who your best clients are and where to find more</div><div class="ptl">You cannot attract the right clients if you don't know exactly who they are and why you're the right choice for them.</div></div>
+        <ul class="pi"><li>Define your ideal client</li><li>Map the market and your real opportunity</li><li>Understand how they talk about their problems</li><li>Sharpen your strategy and positioning</li></ul>
+        <div class="pdel"><strong>What you get:</strong> A complete profile of your ideal client, a clear market map, and a message that resonates. The foundation for everything that follows.
+          <button class="itog" onclick="tog(this)"><span class="iarr">→</span> See an example</button>
+          <div class="pimg">
+            <div class="m1h"><span class="m1ht">Ideal client profile</span></div>
+            <div class="m1b">
+              <div class="m1s">Who they are</div>
+              <div class="m1r"><span class="m1i">🏢</span><span class="m1t">Small and medium companies <span>10–100 employees · Services, manufacturing, trade</span></span></div>
+              <div class="m1r"><span class="m1i">📈</span><span class="m1t">Operations becoming more complex <span>Growing fast, transaction volume increasing</span></span></div>
+              <div class="m1r"><span class="m1i">⚖️</span><span class="m1t">New law requires electronic invoicing <span>Regulatory pressure creating urgent need</span></span></div>
+              <div class="m1d"></div>
+              <div class="m1s">Who decides</div>
+              <div class="m1r"><span class="m1i">👤</span><span class="m1t">Founder — involved but not always the only voice</span></div>
+              <div class="m1r"><span class="m1i">👤</span><span class="m1t">CFO or Finance Director — drives the day-to-day decision</span></div>
+              <div class="m1r"><span class="m1i">👤</span><span class="m1t">Admin or Operations Manager — often the one feeling the pain</span></div>
+              <div class="m1d"></div>
+              <div class="m1s">Their language</div>
+              <div class="m1tg">
+                <span class="m1qt">"My accountant is overwhelmed and I keep getting errors in my reports."</span>
+                <span class="m1qt">"Every month closing takes us 3 days and I still don't trust the numbers."</span>
+                <span class="m1qt">"We just hired 10 people and payroll is a mess."</span>
+                <span class="m1qt">"The tax authority is asking for electronic invoices and I have no idea where to start."</span>
+                <span class="m1qt">"I found out we had unpaid invoices from 6 months ago because nobody was tracking them."</span>
+              </div>
+              <div class="m1d"></div>
+              <div class="m1s">Where to find them</div>
+              <div class="m1tg">
+                <span class="m1st">LinkedIn</span><span class="m1st">Google Maps</span><span class="m1st">Industry directories</span><span class="m1st">Trade events</span><span class="m1st">Recent funding rounds</span><span class="m1st">Job postings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc">
+        <div class="pbar red"></div>
+        <div class="pbd"><div class="pnum">02</div><span class="ptag">Connect with the right people</span><div class="ph">Reach decision-makers at the exact moment they're open to listening</div><div class="ptl">We identify businesses going through a change and those are the moments people are most open to finding a solution.</div></div>
+        <ul class="pi"><li>Contact people who are ready to listen</li><li>Messages that feel personal, not automated</li><li>Smart follow-up without being annoying</li><li>Qualified meetings land in your calendar</li></ul>
+        <div class="pdel"><strong>What you get:</strong> A consistent flow of qualified meetings with the right decision-makers, booked directly in your calendar every month.
+          <button class="itog" onclick="tog(this)"><span class="iarr">→</span> See an example</button>
+          <div class="pimg">
+            <div class="m2h"><span class="m2ht">Matched prospect</span><span class="m2hb">High intent</span></div>
+            <div class="m2tp"><div class="m2n">Buildco Solutions</div><div class="m2m">Construction &amp; Engineering · Madrid, Spain</div></div>
+            <div class="m2g">
+              <div class="m2c"><div class="m2cl">Industry</div><div class="m2cv">Construction management</div></div>
+              <div class="m2c"><div class="m2cl">Employees</div><div class="m2cv">28 · Growing fast</div></div>
+              <div class="m2c"><div class="m2cl">Situation</div><div class="m2cv">Growing fast in the past 6 months. Looking for an accounting assistant to manage the load.</div></div>
+              <div class="m2c"><div class="m2cl">Goal</div><div class="m2cv">Reduce manual admin without hiring a full-time employee.</div></div>
+              <div class="m2c"><div class="m2cl">Decision maker</div><div class="m2cv">CFO · Laura Martínez</div></div>
+              <div class="m2c"><div class="m2cl">Software using</div><div class="m2cv">Excel, QuickBooks · No ERP</div></div>
+            </div>
+            <div class="m2sg">
+              <div class="m2sl">Why contact them now</div>
+              <div class="m2sr"><div class="m2sd"></div><div class="m2st">Hired 8 new employees in the last 3 months <span>Team scaling fast — back office under pressure</span></div><div class="m2sb">Strong signal</div></div>
+              <div class="m2sr"><div class="m2sd"></div><div class="m2st">Posted 2 admin and finance roles on LinkedIn <span>Trying to solve the problem manually — right moment to offer a smarter solution</span></div><div class="m2sb">Strong signal</div></div>
+              <div class="m2sr"><div class="m2sd"></div><div class="m2st">New electronic invoicing regulation in force from January <span>Regulatory pressure adding urgency to the decision</span></div><div class="m2sb">Urgent</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc">
+        <div class="pbar"></div>
+        <div class="pbd"><div class="pnum">03</div><span class="ptag">Close More</span><div class="ph">Maximise every conversation into a signed contract</div><div class="ptl">Generating meetings is only half the job. We use AI and automated systems to make sure every qualified lead is maximised from booking to signed contract.</div></div>
+        <ul class="pi">
+          <li>More show-ups with automated reminders and pre-call prep</li>
+          <li>AI briefings before every call so you walk in knowing exactly who they are</li>
+          <li>Automated follow-ups so no lead goes cold between interested and signed</li>
+          <li>Full pipeline visibility and monthly numbers to know what is working</li>
+        </ul>
+        <div class="pdel"><strong>What you get:</strong> A system where every qualified lead is tracked, every conversation is prepared, and no deal falls through the cracks.
+          <button class="itog" onclick="tog(this)"><span class="iarr">→</span> See an example</button>
+          <div class="pimg">
+            <div class="m3w">
+              <div class="m3t"><span>Leads</span><span>Booked Calls</span><span>Calendar</span></div>
+              <div class="m3sl"><span class="tl">LEADS</span><span style="font-size:9px;color:#6b6760;margin-left:4px">6</span></div>
+              <div class="m3ch"><span>Name</span><span>Start</span><span>Due</span><span>Company</span></div>
+              <div class="m3r"><span class="blr">Jair Rozo</span><span class="nr">4/20/26</span><span class="dr">—</span><span class="blr-sm">Tecsil</span></div>
+              <div class="m3r"><span class="blr">Yohan Alvarez</span><span class="nr">4/21/26</span><span class="dr">—</span><span class="blr-sm">Prime Work</span></div>
+              <div class="m3r"><span class="blr">Martha Soler</span><span class="nr">4/23/26</span><span class="dr">10/6</span><span class="blr-sm">AmCham</span></div>
+              <div class="m3sl" style="border-top:1px solid #f2efe9;margin-top:2px"><span class="tb">BOOKED CALLS</span><span style="font-size:9px;color:#6b6760;margin-left:4px">8</span></div>
+              <div class="m3ch"><span>Name</span><span>Start</span><span>Due</span><span>Company</span></div>
+              <div class="m3r"><span class="blr">Manuel Báez</span><span class="nr">3/26/26</span><span class="dr">4/1/26</span><span class="blr-sm">Valencia Prod.</span></div>
+              <div class="m3r"><span class="blr">Carlos Bermeo</span><span class="nr">3/27/26</span><span class="dr">4/6/26</span><span class="blr-sm">Compu Marketing</span></div>
+              <div class="m3r"><span class="blr">Christian Farah</span><span class="nr">4/6/26</span><span class="dr">4/8/26</span><span class="blr-sm">Clickparts</span></div>
+              <div class="m3r"><span class="blr">Laura Gutierrez</span><span class="nr">4/8/26</span><span class="dr">4/13/26</span><span class="blr-sm">Ergenia</span></div>
+              <div class="m3r"><span class="blr">Juan Pablo Castro</span><span class="nr">4/6/26</span><span class="dr">4/15/26</span><span class="blr-sm">Circular Factoring</span></div>
+              <div class="m3r"><span class="blr">Angelica Mogollon</span><span class="nr">4/14/26</span><span class="nr">4/17/26</span><span class="blr-sm">OES</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="ww" id="who">
+  <div class="si">
+    <span class="lbl">Who is this for</span>
+    <h2 class="h2">You are in the <em>right place</em> if...</h2>
+    <p class="sub">We work best with B2B companies that recognise themselves in one or more of these situations.</p>
+    <div class="g6">
+      <div class="wc"><div class="wct">You are ready to stop relying only on referrals to grow</div><p class="wcp">You have a great offer and clients stay. Now you are ready to stop depending only on referrals and reach more of the right people consistently.</p></div>
+      <div class="wc"><div class="wct">You are ready to close more of the right conversations</div><p class="wcp">You are having conversations. Now you want better fit, faster decisions, and a process that turns more of them into signed contracts.</p></div>
+      <div class="wc"><div class="wct">You are ready to make growth consistent</div><p class="wcp">You have had good months and others not so good. Now you want a system behind it so results are predictable, not dependent on timing or luck.</p></div>
+      <div class="wc"><div class="wct">You are ready to scale</div><p class="wcp">You are ready to grow, you can move fast when an opportunity shows up, and you are open to changing things that are not working.</p></div>
+      <div class="wc"><div class="wct">You are ready to make outreach actually work</div><p class="wcp">You have tried email or LinkedIn before without much success. Now you want the right approach — one that feels personal, reaches the right people, and converts.</p></div>
+      <div class="wc"><div class="wct">You are ready to give your team more quality leads and a better system</div><p class="wcp">You have people ready to close. Now you want to cut the manual work, automate what can be automated, and make sure your team always has a full pipeline of qualified conversations to work with.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="iw" id="industries">
+  <div class="ilbl"><span class="lbl">Industries we have worked with</span></div>
+  <div class="tw">
+    <div class="track">
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="11" r="5"/><path d="M6 30c0-6.627 5.373-10 12-10s12 3.373 12 10"/></svg><span class="in">Recruitment</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="26" height="16" rx="2"/><path d="M12 28h12M18 24v4M11 14h4M11 18h8"/></svg><span class="in">SaaS</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6l2.5 7.5H28l-6 4.5 2.5 7.5L18 21l-6.5 4.5 2.5-7.5-6-4.5h7.5z"/></svg><span class="in">Healthcare</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="4"/><circle cx="18" cy="18" r="9" stroke-dasharray="3 3"/><path d="M18 5v4M18 27v4M5 18h4M27 18h4"/></svg><span class="in">Industrial Automation</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v24M24 6v24M12 10h12M12 16h12M12 22h12"/><circle cx="12" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="24" cy="16" r="2" fill="currentColor" stroke="none"/><circle cx="12" cy="22" r="2" fill="currentColor" stroke="none"/></svg><span class="in">Biotechnology</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="26" height="18" rx="2"/><path d="M5 15h26"/><circle cx="12" cy="22" r="2"/><path d="M18 20h6M18 24h4"/></svg><span class="in">Fintech</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4v28M18 4l-8 8M18 4l8 8M8 28h20"/></svg><span class="in">Legal Tech</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 28l7-8 6 4 8-12"/><circle cx="6" cy="28" r="2" fill="currentColor" stroke="none"/><circle cx="13" cy="20" r="2" fill="currentColor" stroke="none"/><circle cx="19" cy="24" r="2" fill="currentColor" stroke="none"/><circle cx="27" cy="12" r="2" fill="currentColor" stroke="none"/></svg><span class="in">Data &amp; Analytics</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="14" width="28" height="12" rx="3"/><path d="M8 14l3-6h14l3 6"/><circle cx="11" cy="26" r="3"/><circle cx="25" cy="26" r="3"/></svg><span class="in">Intelligent Mobility</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="26" height="18" rx="4"/><path d="M13 19h6M16 16v6"/><circle cx="23" cy="17" r="1" fill="currentColor" stroke="none"/><circle cx="23" cy="21" r="1" fill="currentColor" stroke="none"/></svg><span class="in">eSports</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="18" height="18" rx="3"/><circle cx="18" cy="18" r="4"/><path d="M18 5v4M18 27v4M5 18h4M27 18h4"/></svg><span class="in">AI Solutions</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="11" r="5"/><path d="M6 30c0-6.627 5.373-10 12-10s12 3.373 12 10"/></svg><span class="in">Recruitment</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="26" height="16" rx="2"/><path d="M12 28h12M18 24v4M11 14h4M11 18h8"/></svg><span class="in">SaaS</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6l2.5 7.5H28l-6 4.5 2.5 7.5L18 21l-6.5 4.5 2.5-7.5-6-4.5h7.5z"/></svg><span class="in">Healthcare</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="4"/><circle cx="18" cy="18" r="9" stroke-dasharray="3 3"/><path d="M18 5v4M18 27v4M5 18h4M27 18h4"/></svg><span class="in">Industrial Automation</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v24M24 6v24M12 10h12M12 16h12M12 22h12"/><circle cx="12" cy="10" r="2" fill="currentColor" stroke="none"/><circle cx="24" cy="16" r="2" fill="currentColor" stroke="none"/><circle cx="12" cy="22" r="2" fill="currentColor" stroke="none"/></svg><span class="in">Biotechnology</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="26" height="18" rx="2"/><path d="M5 15h26"/><circle cx="12" cy="22" r="2"/><path d="M18 20h6M18 24h4"/></svg><span class="in">Fintech</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4v28M18 4l-8 8M18 4l8 8M8 28h20"/></svg><span class="in">Legal Tech</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 28l7-8 6 4 8-12"/><circle cx="6" cy="28" r="2" fill="currentColor" stroke="none"/><circle cx="13" cy="20" r="2" fill="currentColor" stroke="none"/><circle cx="19" cy="24" r="2" fill="currentColor" stroke="none"/><circle cx="27" cy="12" r="2" fill="currentColor" stroke="none"/></svg><span class="in">Data &amp; Analytics</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="14" width="28" height="12" rx="3"/><path d="M8 14l3-6h14l3 6"/><circle cx="11" cy="26" r="3"/><circle cx="25" cy="26" r="3"/></svg><span class="in">Intelligent Mobility</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="26" height="18" rx="4"/><path d="M13 19h6M16 16v6"/><circle cx="23" cy="17" r="1" fill="currentColor" stroke="none"/><circle cx="23" cy="21" r="1" fill="currentColor" stroke="none"/></svg><span class="in">eSports</span></div>
+      <div class="ii"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="18" height="18" rx="3"/><circle cx="18" cy="18" r="4"/><path d="M18 5v4M18 27v4M5 18h4M27 18h4"/></svg><span class="in">AI Solutions</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="yw" id="why">
+  <div class="si">
+    <span class="lbl">Why Axem Solution</span>
+    <h2 class="h2">What makes us <em>different</em></h2>
+    <div class="dg">
+      <div class="dc"><div class="dic">⚙</div><div class="dh">Strategy before tactics</div><p class="dp">We define exactly who your ideal client is and how to position your offer before we contact anyone. We build the foundation that makes everything else work.</p></div>
+      <div class="dc"><div class="dic">⇌</div><div class="dh">Full-cycle ownership</div><p class="dp">We don't hand over a list and walk away. We own the full revenue cycle, strategy, client acquisition, and conversion, and we are invested in your results.</p></div>
+      <div class="dc"><div class="dic">✦</div><div class="dh">Human expertise and AI at scale</div><p class="dp">The best of human expertise and AI working together. Messages written by real people, personalised at scale so they feel 1:1, never automated.</p></div>
+      <div class="dc"><div class="dic">↑</div><div class="dh">Systems that compound</div><p class="dp">We build infrastructure that gets stronger over time. The longer we work together, the better your pipeline becomes. No dependency on ad spend or one-off campaigns.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="aw" id="about">
+  <div class="si">
+    <span class="lbl">About</span>
+    <h2 class="h2">Built by people who have <em>done it</em></h2>
+    <div class="abt">
+      <p>Our clients have a great offer and service. But being great at your product is not the same as being great at selling it.</p>
+      <p>We bridge that gap with deep sales experience and modern AI systems, helping you understand the numbers, handle the conversations, and build a process that converts.</p>
+      <p>We combine real-world sales knowledge with the tools, systems, and processes that make it scalable. So you don't just get a pipeline. You get a team that helps you become better at every step of the process.</p>
+    </div>
+    <div class="abc">
+      <div class="ac"><div class="acl">Our experience</div><p class="act">20+ years of hands-on experience in sales, traditional and digital marketing, business development, and AI and Automation. Across multiple industries and markets.</p></div>
+      <div class="ac"><div class="acl">Beyond the system</div><p class="act">We automate and optimise every part of the process: reply rates, meetings booked, show-up rates, and contracts closed. Every step matters and we work on all of them.</p></div>
+      <div class="ac"><div class="acl">How we work</div><p class="act">We work with a limited number of clients at a time so every partnership gets the attention it deserves.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="fw" id="faq">
+  <div class="si">
+    <span class="lbl">FAQ</span>
+    <h2 class="h2">Questions we <em>hear often</em></h2>
+    <div class="fl">
+      <details><summary>How is your approach different from a typical agency?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">We start by understanding exactly who your dream client is, what they need, and how your offer fits. Before we contact anyone, we identify companies that are actively facing the problem you solve. We track signals like new hires, funding rounds, team changes, and company updates to find prospects at the right moment. This way every message goes to someone who is genuinely interested in what you offer.</p></details>
+      <details><summary>How do you actually reach out to potential clients?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">We use a combination of email and LinkedIn to connect with decision-makers at the right companies. Everything is built around your ideal client profile and the signals we track. We set up and manage the full technical infrastructure so messages land where they should, including LinkedIn profile optimisation. From there we write, test, and improve every message based on what is getting replies and what is not.</p></details>
+      <details><summary>How do you reach more people without losing the personal touch?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">Most companies only scratch the surface of their market because manual research and outreach takes too long. There are far more potential clients out there than most teams ever reach. We use AI and automation to cover more ground, faster, while keeping every message relevant and personal. AI does not replace the human touch, it amplifies it. The result is a wider reach without losing the quality of the conversation.</p></details>
+      <details><summary>Will AI outreach sound robotic?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">No. AI helps us gather better data, but we combine technology and human copywriting experts to create personalised, effective messages that add value, feel natural and build trust.</p></details>
+      <details><summary>How do you help close more contracts once leads are coming in?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">We use AI and automation once we understand your flow to fill in the gaps where we detect you are losing leads and contracts. This usually means faster first responses when a lead shows interest, higher show-up rates, follow-ups so no lead goes cold, quicker proposals, a briefing before every call, all your lead information in one place, and clear numbers to know what is working and what to improve.</p></details>
+      <details><summary>Do I still need an SDR team?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">You can have SDRs, but with our system, you don't have to hire and train more people to see results. We help you grow your pipeline without the delays and extra expenses of building a team, so you can focus on closing deals.</p></details>
+      <details><summary>What if our product is niche or technical?<div class="fi"><span class="pl">+</span><span class="mi">−</span></div></summary><p class="fa">We take the time to understand your market, your ideal clients, and the specific language they use. This helps us create messages that feel written by a domain expert, with value and that speak directly to their needs.</p></details>
+    </div>
+  </div>
+</div>
+
+<div class="ctaw" id="contact">
+  <div class="ctai">
+    <h2 class="h2">Ready to build your <em>revenue system?</em></h2>
+    <p class="ctasub">Get started today with a 30 minute real conversation about your growth.</p>
+    <a href="https://cal.com/marcela-gallego-zgbxvq/intro-call-30-min" class="bto" rel="noopener">Book Your Strategy Call</a>
+  </div>
+</div>
+
+<footer>
+  <div class="fi2">
+    <div class="fl2">
+      <span class="fc">Contact us:</span>
+      <a href="mailto:info@axemsolution.com" class="fe">info@axemsolution.com</a>
+      <span class="fcp">© Axem Solution 2026</span>
+    </div>
+    <div class="flogo"><span class="flt">Axem Solution<span>.</span></span></div>
+    <div class="fr2"><a href="https://www.linkedin.com/in/marcela-gallego-149167/" class="sb" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div>
+  </div>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>10)});
+function tog(btn){btn.classList.toggle('open');var img=btn.nextElementSibling;img.classList.toggle('vis');btn.querySelector('.iarr').style.transform=btn.classList.contains('open')?'rotate(90deg)':'rotate(0)'}
+</script>
+</body>
+</html>
